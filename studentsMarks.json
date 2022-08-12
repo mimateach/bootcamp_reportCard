@@ -1,0 +1,43 @@
+{   "marks":[
+    {
+        "id": 1,
+        "name": "Paige", 
+        "History": "4",
+        "Spanish":"6",
+        "English": "9",
+        "Science": "2"
+    },
+    {
+        "id": 2,
+        "name": "Alan", 
+        "History": "2",
+        "Spanish":"8",
+        "English": "5",
+        "Science": "9"
+    },
+    {
+        "id": 3,
+        "name": "Oliver", 
+        "History": "1",
+        "Spanish":"6",
+        "English": "5",
+        "Science": "3"
+    },
+    {
+        "id": 4,
+        "name": "Ellie", 
+        "History": "6",
+        "Spanish":"7",
+        "English": "5",
+        "Science": "10"
+    },
+    {
+        "id": 5,
+        "name": "Sarah", 
+        "History": "10",
+        "Spanish":"6",
+        "English": "4",
+        "Science": "8"
+    }
+]
+}

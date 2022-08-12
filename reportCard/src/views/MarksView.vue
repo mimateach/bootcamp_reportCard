@@ -1,25 +1,55 @@
 <script setup>
-import Header from "../components/Header.vue";
+import StudentData from "../components/StudentData.vue";
+import DataTable from "../components/DataTable.vue";
+import HomeView from "./HomeView.vue";
 </script>
 
 <template>
   <main>
-    <Header />
-    <h3>
-      You’ve successfully created a project with
-    </h3>
-        <h3>
-      You’ve successfully created a project with
-      <a target="_blank" href="https://vitejs.dev/">Vite</a> +
-      <a target="_blank" href="https://vuejs.org/">Vue 3</a>.
-    </h3>
-
+    <div class="studentInfo">
+      <div class="studentData">
+        <StudentData />
+      </div>
+      <div class="dataTable">
+        <DataTable />
+      </div>
+    </div>
+    <div class="button">
+      <button>
+        <RouterLink to="./views/HomeView.vue">Go back</RouterLink>
+      </button>
+    </div>
   </main>
+
   <RouterView />
 </template>
 
 <style lang="scss" scoped>
-h3 {
-    color: blue;
+.studentInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.studentData,
+.dataTable {
+  height: auto;
+  margin-top: 10vh;
+}
+.studentData {
+  width: 20vw;
+  background-color: #1e2d2d;
+  color: #d7fcfc;
+  padding: 2vw;
+}
+.dataTable {
+  width: 60vw;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+button {
+  width: 10vw;
+  height: 3vh;
 }
 </style>
